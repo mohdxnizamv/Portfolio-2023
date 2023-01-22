@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="app/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="10" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>portfolio | mohdxnizamv</title>
+  </head>
+  <body class="font-Poppins">
+    <section>
+      <div class="mx-auto mt-20 max-w-4xl p-3">
+        <div
+          class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+        >
+          <img
+            src="app/image/only me.jpg"
+            alt="mohdxnizamv"
+            class="mx-auto w-3/4 rounded-full"
+          />
+
+          <span class="sm:text-center md:text-center lg:text-left xl:text-left">
+            <h1 class="mb-2 font-bold sm:text-xl xl:text-4xl">
+              <span class="text-blue-600">Hi!</span>
+              I'am mohdx nizamv
+            </h1>
+            <!--  -->
+
+            <div class="space-x-10 p-6">
+              <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+              <a href="#"><i class="uil uil-instagram"></i></a>
+              <a href="https://github.com/mohdxnizamv"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+            </div>
+            <!--  -->
+
+            <p class="mb-2 font-bold sm:text-lg xl:text-2xl">
+              Software Engineer
+            </p>
+            <!--  -->
+
+            <p class="mb-10">
+              Experience in web development knowledge, using HTML, Tailwind CSS,
+              Php, Mysql, Blockchain and more. see about myself more fully?
+              download my cv to find out more ^^
+            </p>
+            <!--  -->
+
+            <a href="" class="btn"
+              >Download CV <i class="uil uil-file-download button__icon"></i>
+            </a>
+            <!--  -->
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mx-auto mt-16 max-w-3xl p-3">
+        <h2 class="mb-2 text-center text-4xl font-bold">My Portfolio</h2>
+
+        <p class="pb-10 text-center">
+          the project below is an independent project, the team that I have
+          worked on, only a few that I have worked on here, you can see the rest
+          on my github.
+        </p>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span class="text-base">
+                <img src="app/image/example1.png" alt="" class="rounded-lg" />
+                <p>Storage Data Blockchain</p>
+                <p>Live On Polygon Network</p>
+
+                <br />
+                <div
+                  class="flex grid-cols-2 gap-x-3 gap-y-3 pb-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+                >
+                  <a href="" class="btn2">demo <i class="uil uil-pen"></i> </a>
+                  <a href="https://github.com/mohdxnizamv" class="btn2"
+                    >source code <i class="uil uil-github-alt"></i>
+                  </a>
+                </div>
+              </span>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      })
+    </script>
+  </body>
+</html>
