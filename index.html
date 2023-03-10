@@ -13,7 +13,6 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="refresh" content="35" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio | mohdxnizamv</title>
   </head>
@@ -147,11 +146,10 @@
 
                 <p class="pt-3">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                  a ducimus debitis sunt quae. Atque adipisci earum animi et non
-                  labore, vitae natus praesentium cupiditate.
-                </p>
+                  a ducimus debitis sunt quae.
 
-                <br />
+                  <br />
+                </p>
 
                 <div
                   class="flex grid-cols-2 gap-x-3 gap-y-3 pb-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
@@ -283,17 +281,28 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        speed: 400,
+        spaceBetween: 100,
+        autoplay: {
+          delay: 3000,
+        },
+
+        // If we need pagination
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
         },
+
+        // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
         },
       })
 
